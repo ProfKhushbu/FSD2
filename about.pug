@@ -1,0 +1,56 @@
+doctype html 
+html(lang="en") 
+head
+  title PUG Tutorial 
+body 
+    //1
+    h1 LJU
+    //2
+    p lets learn pug 
+    //3
+    p 
+      i Thank you 
+    //4
+    h5(style="text-transform:uppercase;color:pink") Lju
+    //5
+    p
+      |The file will not
+      |render properly if the
+      |programmer does not make
+      |sure of proper indentation
+      //6
+    ul 
+     li Mango
+     li Watermelon
+     li Pineapple
+      
+      // 7 single attribute
+    h5(style="color:red") Hello
+
+      // 8 Attributes spanning over multiple lines
+    a(href='/about',target="_blank") About 
+
+      // 9 Multiple attributes separated by a comma
+    table(border='1px solid',style='border-collapse:collapse;color:red')
+     tr
+      th name
+      th id 
+     tr
+      td abc 
+      td 1
+
+      // Unbuffered Code
+    -var number = 2
+    -var color = 'Black'
+    -var list = ["India", "USA", "UK"]
+
+      // 10 Buffered Code
+    h4= "3 times number is: " + number*3
+    h3= "I Like " + color + " color"
+    h3= "Country: " + list[2]
+    // This is a Buffered Comment
+
+    //-This is an Unbuffered Comment
+
+    
+    
